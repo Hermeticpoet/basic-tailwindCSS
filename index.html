@@ -7,22 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <title>TailWindCSS Introduction</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </head>
 
 <body class="bg-gray-300">
+
+    <header class="bg-green-500 text-white font-bold pt-6 md:py-6">
+        <div class="container md:flex md:items-center md:justify-between mx-auto px-4">
+            <h1 class="mb-4 md:mb-0 text-3xl">Logo Type</h1>
+            <ul class="md:flex md:items-center list-reset text-xl">
+                <li class="md:ml-4 border-t md:border-0">
+                    <a class="block md:inline text-white hover:text-gray-200 no-underline py-4 md:py-0" href="#">Products</a>
+                </li>
+                <li class="md:ml-4 border-t md:border-0">
+                    <a class="block md:inline text-white hover:text-gray-200 no-underline py-4 md:py-0" href="#">About</a>
+                </li>
+                <li class="md:ml-4 border-t md:border-0">
+                    <a class="block md:inline text-white hover:text-gray-200 no-underline py-4 md:py-0" href="#">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
     <div class="container leading-normal mx-auto my-4 px-4">
-        <h1 class="md:font-serif lg:font-sans font-extrabold text-3xl md:text-5xl text-gray-700 text-blue-400 lg:text-gray-500 text-center tracking-wide uppercase">Introduction to Tailwind</h1>
+        <h2 class="md:font-serif lg:font-sans font-extrabold text-3xl md:text-5xl text-gray-700 text-blue-400 lg:text-gray-500 text-center tracking-wide uppercase">Introduction to Tailwind</h2>
         <p class="font-semibold text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quos officiis voluptatibus
             quasi facilis animi blanditiis. Eius cumque tempora quibusdam perferendis neque nam voluptates, dolores
             repudiandae architecto recusandae! Delectus, necessitatibus?</p>
-        <h2 class="md:font-serif lg:font-sans font-bold text-2xl md:text-3xl text-gray-700 text-blue-400 lg:text-gray-500 tracking-wide uppercase">Sub Headline</h2>
+        <h3 class="md:font-serif lg:font-sans font-bold text-2xl md:text-3xl text-gray-700 text-blue-400 lg:text-gray-500 tracking-wide uppercase">Sub Headline<i class="fas fa-thumbs-up" style="margin-left: 1rem; margin-bottom: .1rem;"></i></h3>
         <p class="">Cum necessitatibus expedita, neque praesentium libero illum pariatur consequatur aspernatur ad
-            ratione soluta fuga voluptatibus deserunt amet, commodi hic iure eaque error sequi sint. Quaerat beatae
+            ratione soluta fuga voluptatibus <a class="text-green-700 no-underline hover:text-pink-700" href=#>deserunt amet</a>, commodi hic iure eaque error sequi sint. Quaerat beatae
             nihil et soluta. Quisquam.</p>
         <p class="">Ipsam, nesciunt necessitatibus natus facilis itaque molestiae animi. Expedita exercitationem
             molestiae ipsum autem maiores sed. Et ab quidem dolor, magnam autem quos deleniti natus, provident
             distinctio odio cum, dolores consectetur.</p>
-        <h2 class="md:font-serif lg:font-sans font-bold text-2xl md:text-3xl text-gray-700 text-blue-400 lg:text-gray-500 tracking-wide uppercase">Sub Headline</h2>
+        <h3 class="md:font-serif lg:font-sans font-bold text-2xl md:text-3xl text-gray-700 text-blue-400 lg:text-gray-500 tracking-wide uppercase">Sub Headline<i class="fas fa-archive" style="margin-left: 1rem;"></i></h3>
         <p class="">Ut ab quisquam impedit quia voluptates at? Vitae in soluta sequi laboriosam voluptatem provident
             placeat non fugit porro sint, adipisci quos facere obcaecati, iure libero veritatis? Ut doloribus ullam
             consequatur.</p>
@@ -32,6 +51,40 @@
         <p class="font-mono my-3 text-red-400 text-xs">Ducimus molestiae possimus illum odio corrupti est magnam, et cupiditate voluptas obcaecati ipsam
             tenetur temporibus pariatur debitis minus facere soluta libero similique quasi saepe quod dolor harum. Iure,
             perspiciatis eaque.</p>
+
+        <!-- Grid Cell Gutter Value Should Match The Padding Value Of The Cells -->
+        <div class="flex flex-wrap my-6 text-white -mx-3">
+            <div class="w-full md:w-1/2 lg:w-2/3 p-3">
+                <div class="bg-gray-500 p-4 rounded-lg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sint sed excepturi sunt facilis rem itaque laudantium atque error vero. Minus animi hic qui dicta sed est iusto, aliquid neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias possimus harum minus vero delectus ut nobis maiores? Mollitia, odio repellendus.</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-3">
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sint sed excepturi sunt facilis rem itaque laudantium atque error vero. Minus animi hic qui dicta sed est iusto, aliquid neque.</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-3">
+                <div class="bg-gray-500 p-4 rounded-lg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sint sed excepturi sunt facilis rem itaque laudantium atque error vero. Minus animi hic qui dicta sed est iusto, aliquid neque.</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-2/3 p-3">
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sint sed excepturi sunt facilis rem itaque laudantium atque error vero. Minus animi hic qui dicta sed est iusto, aliquid neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, doloremque neque eius ratione iure alias est esse. Consequuntur, delectus provident.</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-2/3 p-3">
+                <div class="bg-gray-500 p-4 rounded-lg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sint sed excepturi sunt facilis rem itaque laudantium atque error vero. Minus animi hic qui dicta sed est iusto, aliquid neque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi distinctio error odio ex natus quam asperiores eveniet voluptatem maiores vero.</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-3">
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sint sed excepturi sunt facilis rem itaque laudantium atque error vero. Minus animi hic qui dicta sed est iusto, aliquid neque.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
